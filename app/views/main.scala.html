@@ -1,0 +1,26 @@
+@(title: String)(loginForm: Html)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href='@routes.Assets.at("stylesheets/main.css")'>
+    <link rel="shortcut icon" type="image/png" href='@routes.Assets.at("images/favicon.png")'>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <img src='@routes.Assets.at("images/logo.png")'>
+        <span>Twitter Clone</span>
+        @loginForm
+      </div>
+    </header>
+    @content
+    <footer>
+      <div class="wrapper">
+        Ribbit - A Twitter Clone Tutorial<img src='@routes.Assets.at("images/logo-nettuts.png")'>
+      </div>
+    </footer>
+  </body>
+</html>
