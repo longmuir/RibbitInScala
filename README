@@ -1,4 +1,11 @@
-This is your new Play application
-=================================
+This was my first foray into the web development framework Play.  I was searching for a Scala-Play equivalent of Michael Hartl's very famous Rails Tutorial.  I didn't find anything that comprehensive, but I was greatful to find Patkos Csaba's great 'quick tour' of Play.  
 
-This file will be packaged with your application, when using `activator dist`.
+My first commit intended to follow the Tutorial (http://code.tutsplus.com/articles/building-ribbit-in-scala--net-34302) as closely as possible with the latest versions of Scala, Play and Slick.  The most challenging aspect of that, was taking into account the changes for Slick 2.0 (http://slick.typesafe.com/doc/2.0.1-RC1/migration.html).  
+
+Some of my takeaways from my first Scala-Play tutorial:
+- Working in a typesafe language means that many bugs that would be caught by unit tests are caught by the compiler instead.  Even though this tutorial didn't have a 'test' portion, more often than not, compile would catch most of my mistakes.
+- You still need a comprehensive test suite.  This tutorial is as basic as you can get for a web application, and at times, I was still regretting the lack of a solid UT suite for debugging.  Adding tests will probably be my first add-on to this tutorial. 
+- This was also my first project using Intellij.  After 2 years of working with text editors like Sublime, I was interested to see if the IDE world had improved since my Eclipse days in University.  It has.. but I'm going to look at Scala plugins for Sublime next.
+- This tutorial is basic and great to get some flavour, but there's a lot of refactoring I would like to do.  Remove code duplication and hard codings.  I know hte ._1 ._2 notation is commonly used in Scala, but I am wondering if there's a more expressive way (e.g. .name .email).
+
+Next up - the book 'Play for Scala'.
